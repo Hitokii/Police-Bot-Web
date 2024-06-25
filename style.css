@@ -1,0 +1,66 @@
+:root {
+    --bs-body-bg: #335;
+    --bs-primary: #eee12f !important;
+    --bs-btn-bg: #eee12f !important;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    filter: blur(10px);
+    z-index: 0;
+
+}
+
+content {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    margin-top: 5%;
+    padding: 4vw;
+}
+
+content div {
+    width: 100%;
+}
+
+content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.glass {
+    border: 1pt solid #ffffff55;
+    border-radius: 10px;
+    background: #ffffff1a;
+    backdrop-filter: blur(20px);
+}
+
+.card-avatar {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.card, .card-body {
+    background: #ffffff1a;
+    border-radius: 10px;
+    border: 1pt solid #ffffff55;
+    backdrop-filter: blur(20px);
+    color: black;          
+}
